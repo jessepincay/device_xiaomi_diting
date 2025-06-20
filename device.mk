@@ -41,6 +41,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     $(foreach tag,$(SPAMMY_LOG_TAGS),log.tag.$(tag)=E)
 endif
 
+# Esim
+PRODUCT_PACKAGES += \
+    XiaomiEuicc
+
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureResDiting \
