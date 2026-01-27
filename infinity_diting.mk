@@ -8,9 +8,9 @@
 $(call inherit-product, device/xiaomi/diting/device.mk)
 
 # Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_diting
+PRODUCT_NAME := infinity_diting
 PRODUCT_DEVICE := diting
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
@@ -23,3 +23,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=diting_global
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Maintainer Name
+INFINITY_MAINTAINER := "Jezzay097"
+INFINITY_BUILD_TYPE := OFFICIAL
+
+# Whether the device supports Fingerprint On Display
+TARGET_HAS_UDFPS := true
+
+# Whether Including Google Apps
+WITH_GAPPS := true

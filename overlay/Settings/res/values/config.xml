@@ -6,4 +6,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- The radius of the enrollment progress bar, in dp -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">119</integer>
+
+    <!-- About device screen, build maintainer -->
+    <string name="build_maintainer_summary">Jezzay097</string>
+    <string name="build_maintainer_donate_url">https://telegra.ph/DONATIONS-01-27-2</string>
 </resources>
