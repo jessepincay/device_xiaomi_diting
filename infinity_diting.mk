@@ -33,3 +33,10 @@ TARGET_HAS_UDFPS := true
 
 # Whether Including Google Apps
 WITH_GAPPS := true
+
+# Rendering Optimizations
+SURFACE_FLINGER_BOOST := true
+
+# SurfaceFlinger Refresh Rates
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,120)
