@@ -24,15 +24,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Maintainer Name
-INFINITY_MAINTAINER := "Jezzay097"
-INFINITY_BUILD_TYPE := OFFICIAL
-
-# Whether the device supports Fingerprint On Display
-TARGET_HAS_UDFPS := true
-
-# Whether Including Google Apps
-WITH_GAPPS := true
+ASCP_MAINTAINER := Jezzay097
+WITH_REVANCED := true
 
 # Rendering Optimizations
 SURFACE_FLINGER_BOOST := true
