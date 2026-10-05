@@ -8,7 +8,7 @@
 $(call inherit-product, device/xiaomi/diting/device.mk)
 
 # Inherit from common lineage configuration
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := infinity_diting
 PRODUCT_DEVICE := diting
@@ -24,15 +24,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Maintainer Name
-INFINITY_MAINTAINER := "Jezzay097"
-INFINITY_BUILD_TYPE := OFFICIAL
-
-# Whether the device supports Fingerprint On Display
+# Evox stuff
+TARGET_BOOT_ANIMATION_RES := 1080
+PRODUCT_NO_CAMERA := true
 TARGET_HAS_UDFPS := true
-
-# Whether Including Google Apps
-WITH_GAPPS := true
+WITH_GMS := true
+EVO_BUILD_TYPE := Unofficial
+TORCH_STR_SUPPORTED := true
 
 # Rendering Optimizations
 SURFACE_FLINGER_BOOST := true
